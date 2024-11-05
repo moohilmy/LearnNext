@@ -5,6 +5,9 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --color-primary: #0D00B5;
+  --color-secondary: #bbb;
+  --size-border-radius: 5px;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -13,9 +16,20 @@
     --foreground: #ededed;
   }
 }
-
+html,
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+
+}
+
+
+.container {
+  max-width: 1100px;
+  min-height: 100vh;
+  margin: 0 auto;
+  padding: 0 20PX;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
